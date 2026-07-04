@@ -38,7 +38,7 @@ header.site {
 .logo-badge {
   width: 54px; height: 54px; border-radius: 50%;
   border: 3px solid var(--gold);
-  background: var(--weiss) url("assets/logo-horse.jpg") center/cover no-repeat;
+  background: var(--weiss) url("assets/logo-vmb-pferd.svg") center/cover no-repeat;
   flex-shrink: 0;
 }
 .wordmark { font-size: 1.35rem; color: var(--braun); text-decoration: none; }
