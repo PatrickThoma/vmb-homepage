@@ -57,8 +57,8 @@ nav.main a.aktiv { background: var(--braun); color: var(--creme); }
   text-align: center;
   padding: 64px 20px 56px;
   background:
-    linear-gradient(rgba(250, 247, 232, 0.9), rgba(250, 247, 232, 0.8) 45%, rgba(250, 247, 232, 0.92)),
-    url("assets/tamino-hintergrund.jpg") center 30%/cover no-repeat;
+    linear-gradient(rgba(250, 247, 232, 0.78), rgba(250, 247, 232, 0.6) 45%, rgba(250, 247, 232, 0.86)),
+    url("assets/tamino-hintergrund.jpg?v=2") center 28%/cover no-repeat;
 }
 .hero .logo-karte {
   display: block;
