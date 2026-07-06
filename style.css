@@ -39,7 +39,7 @@ header.site {
 .logo-badge {
   width: 72px; height: 72px; border-radius: 50%;
   border: 3px solid var(--gold);
-  background: var(--weiss) url("assets/logo-vmb.svg?v=4") center/74% no-repeat;
+  background: var(--weiss) url("assets/logo-vmb.svg?v=5") center/74% no-repeat;
   flex-shrink: 0;
 }
 .wordmark { font-size: 1.35rem; color: var(--gruen); text-decoration: none; }
