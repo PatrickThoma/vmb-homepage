@@ -6,6 +6,7 @@
   --braun-hell: #6b5138;
   --gold: #b98a2f;
   --gold-hell: #e3b95c;
+  --gruen: #39664b;
   --weiss: #ffffff;
 }
 
@@ -36,13 +37,13 @@ header.site {
 }
 .headbar { display: flex; align-items: center; gap: 14px; padding: 12px 0; flex-wrap: wrap; }
 .logo-badge {
-  width: 54px; height: 54px; border-radius: 50%;
+  width: 72px; height: 72px; border-radius: 50%;
   border: 3px solid var(--gold);
-  background: var(--weiss) url("assets/logo-vmb-pferd.svg") center/cover no-repeat;
+  background: var(--weiss) url("assets/logo-vmb.svg?v=2") center/74% no-repeat;
   flex-shrink: 0;
 }
-.wordmark { font-size: 1.35rem; color: var(--braun); text-decoration: none; }
-.wordmark small { display: block; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--braun-hell); font-family: inherit; }
+.wordmark { font-size: 1.35rem; color: var(--gruen); text-decoration: none; }
+.wordmark small { display: block; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gruen); font-family: inherit; }
 nav.main { margin-left: auto; display: flex; gap: 4px; flex-wrap: wrap; }
 nav.main a {
   color: var(--braun); text-decoration: none; font-size: 0.95rem;
@@ -57,30 +58,10 @@ nav.main a.aktiv { background: var(--braun); color: var(--creme); }
   padding: 64px 20px 56px;
   background: radial-gradient(circle at 50% 0%, var(--creme-dunkel) 0%, var(--creme) 70%);
 }
-/* 3D-Rahmen um das Logo (zwei gegenlaeufige Gold-Verlaeufe = Fase) */
-.hero .logo-rahmen {
-  display: inline-block;
-  padding: 12px;
-  border-radius: 20px;
-  margin: 0 auto 18px;
-  background: linear-gradient(145deg, #edd08a 0%, #b98a2f 45%, #7c5a1c 100%);
-  box-shadow:
-    inset 2px 2px 5px rgba(255, 255, 255, 0.6),
-    inset -3px -3px 7px rgba(46, 33, 18, 0.5),
-    0 12px 28px rgba(59, 42, 29, 0.35);
-}
-.hero .logo-innen {
-  padding: 5px;
-  border-radius: 12px;
-  background: linear-gradient(325deg, #edd08a 0%, #9a7226 100%);
-  box-shadow:
-    inset 1px 1px 3px rgba(46, 33, 18, 0.45),
-    inset -1px -1px 2px rgba(255, 255, 255, 0.5);
-}
 .hero .logo-karte {
   display: block;
-  width: min(320px, 72vw); height: auto;
-  border-radius: 8px;
+  width: min(380px, 78vw); height: auto;
+  margin: 0 auto 18px;
 }
 .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); }
 .hero .claim { font-size: clamp(1.05rem, 2.6vw, 1.35rem); color: var(--braun-hell); margin-top: 10px; }
