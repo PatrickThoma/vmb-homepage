@@ -34,9 +34,10 @@
            -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
   /* ---------- Kopf ---------- */
-  .kopf { position: absolute; top: 9mm; left: 10mm; right: 12mm;
-          display: grid; grid-template-columns: 62mm 1fr; column-gap: 8mm; }
-  .logo { width: 62mm; height: auto; display: block; }
+  .kopf { position: absolute; top: 9mm; left: 12mm; right: 12mm;
+          display: grid; grid-template-columns: 30mm 1fr; column-gap: 12mm;
+          align-items: start; }
+  .logo { width: 30mm; height: auto; display: block; align-self: start; }
   .kopf-rechts { padding-top: 7mm; }
   h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 600;
        font-size: 19.5pt; letter-spacing: 0.03em; color: var(--gruen);
@@ -54,8 +55,10 @@
   .kontakt a { color: inherit; text-decoration: none; }
 
   /* ---------- Absenderzeile + Goldlinie ---------- */
-  .absender { position: absolute; top: 99.5mm; left: 12mm; font-size: 8pt;
-              letter-spacing: 0.02em; color: var(--braun); }
+  /* Absenderzeile + Anschriftfeld liegen im Fenster eines DIN-Kuverts (Form B) */
+  .absender { position: absolute; top: 46mm; left: 20mm; font-size: 7.5pt;
+              letter-spacing: 0.02em; color: var(--braun);
+              padding-bottom: 0.8mm; border-bottom: 0.25mm solid var(--linie); }
   .goldlinie { position: absolute; left: 8mm; right: 8mm;
                display: flex; align-items: center; gap: 2.5mm; }
   .goldlinie::before, .goldlinie::after { content: ""; flex: 1; height: 0.35mm; background: var(--gold); }
