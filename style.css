@@ -52,11 +52,13 @@ nav.main a {
 nav.main a:hover { background: var(--creme-dunkel); }
 nav.main a.aktiv { background: var(--braun); color: var(--creme); }
 
-/* Held-Bereich */
+/* Held-Bereich: Tamino als dezenter Hintergrund hinter Creme-Schleier */
 .hero {
   text-align: center;
   padding: 64px 20px 56px;
-  background: radial-gradient(circle at 50% 0%, var(--creme-dunkel) 0%, var(--creme) 70%);
+  background:
+    linear-gradient(rgba(250, 247, 232, 0.9), rgba(250, 247, 232, 0.8) 45%, rgba(250, 247, 232, 0.92)),
+    url("assets/tamino-hintergrund.jpg") center 30%/cover no-repeat;
 }
 .hero .logo-karte {
   display: block;
